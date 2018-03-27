@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:background="@drawable/theme_background"
+    tools:context="com.example.android.mydoctor.ActivityUserArea">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true">
+
+
+    <TextView
+        style="@style/textView_style"
+        android:textSize="22sp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:id="@+id/tvRegister"/>
+
+    <EditText
+        style="@style/editText_Style"
+        android:inputType="textPersonName"
+        android:hint="Enter your Name"
+        android:id="@+id/etName" />
+
+    <EditText
+        style="@style/editText_Style"
+        android:inputType="phone"
+        android:hint="Enter your mobile number"
+        android:id="@+id/etMobileNumber"/>
+
+    <EditText
+        style="@style/editText_Style"
+        android:inputType="textEmailAddress"
+        android:hint="Enter your email id"
+        android:id="@+id/etEmail"/>
+
+    <EditText
+        style="@style/editText_Style"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:id="@+id/etPassword"/>
+
+    <EditText
+        style="@style/editText_Style"
+        android:hint="Confirm password"
+        android:inputType="textPassword"
+        android:id="@+id/etConfirmPass"/>
+    <Button
+        style="@style/button_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:id="@+id/bRegister"/>
+</LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+        <ProgressBar
+            style="@style/progressBar_Style"
+            android:id="@+id/registerProgressBar"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

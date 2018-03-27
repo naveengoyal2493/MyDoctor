@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:background="@drawable/theme_background"
+    tools:context="com.example.android.mydoctor.ActivityUserArea">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+
+
+        <TextView
+            style="@style/textView_style"
+            android:textSize="22sp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Large Text"
+            android:textColor="@color/white"
+            android:id="@+id/tvWelcomeMessage"/>
+
+        <EditText
+            style="@style/editText_Style"
+            android:inputType="textPersonName"
+            android:id="@+id/etName" />
+
+        <EditText
+            style="@style/editText_Style"
+            android:inputType="phone"
+            android:id="@+id/etMobileNumber"/>
+
+        <EditText
+            style="@style/editText_Style"
+            android:inputType="textEmailAddress"
+            android:id="@+id/etEmail"/>
+
+        <Button
+            style="@style/button_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Logout"
+            android:id="@+id/bLogout"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Go to home page"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:id="@+id/tv_HomePage"
+            android:layout_margin="10dp"/>
+
+    </LinearLayout>
+</RelativeLayout>
